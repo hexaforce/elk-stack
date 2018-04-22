@@ -19,7 +19,7 @@ ENV ES_TMPDIR /var/tmp/elasticsearch
 COPY kibana-6.2.4-linux-x86_64 /kibana
 
 COPY logstash-6.2.4 /logstash
-COPY /etc/conf.d/logstash /etc/conf.d/logstash
+COPY conf.d/logstash /etc/conf.d/logstash
 
 ADD elk.sh elk.sh
 CMD ["bash", "-ex", "elk.sh"]
