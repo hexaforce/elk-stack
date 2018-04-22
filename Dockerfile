@@ -3,7 +3,7 @@ MAINTAINER Tomokazu Tantaka <relics9@gmail.com>
 
 ENV VERSION 6.2.4
 
-EXPOSE 9600 5601
+EXPOSE 9200 9600 5601
 
 RUN apk --no-cache add bash nodejs
 
